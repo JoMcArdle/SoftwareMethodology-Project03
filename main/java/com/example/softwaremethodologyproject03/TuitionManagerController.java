@@ -35,4 +35,8 @@ public class TuitionManagerController {
         this.rbCt.setDisable(true);
         this.cbStudyAbroad.setDisable(true);
     }
+    @FXML
+    void onCLiclickBurront(){
+
+    }
 }
