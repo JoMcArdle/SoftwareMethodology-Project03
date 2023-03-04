@@ -26,22 +26,11 @@ public class TuitionManagerController {
     private CheckBox cbStudyAbroad;
 
     @FXML
-    private TextField rosterFirstName;
-    @FXML
     void Resident(ActionEvent event){
         setResident();
     }
 
-    void add(ActionEvent event){
-       String firstName = this.rosterFirstName.getText();
-       //Student s = new Student(firstName, );
-       // Date        mm/dd/yyyy;
-       // DatePicker yyyy-mm-dd;
-        // String[] arr = text.split("-");
-        //int year = arr[0];
-        //String sum= "";
-        //sum += arr[i] + "\n";
-    }
+
     @FXML
     protected void setResident() {
         this.rbInternational.setDisable(true);
