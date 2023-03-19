@@ -1,0 +1,109 @@
+
+.tabPane{
+    -fx-background-color: #023047;
+    -fx-border-color: white;
+}
+.myTab{
+    -fx-background-color: #ffb703;
+    -fx-border-color: #fb8500;
+}
+.myTab:hover{
+    -fx-background-color: #fb8500;
+    -fx-cursor: hand;
+}
+.myTab:selected{
+    -fx-background-color: #fb8500;
+}
+
+.label{
+    -fx-font-family: 'Sans-serif';
+    -fx-text-fill: white;
+}
+.menuBar .label{
+    -fx-text-fill: black;
+}
+
+.textArea{
+    -fx-background-color: #fb8500;
+    -fx-control-inner-background: #ffb703;
+    -fx-text-fill: blue;
+
+}
+.menuBar{
+    -fx-background-color: #ffb703;
+    -fx-border-color: #fb8500;
+}
+.menu{
+    -fx-background-color: #ffb703;
+}
+.menu:hover{
+    -fx-background-color: #fb8500;
+    -fx-cursor: hand;
+    -fx-border-color: white;
+}
+.menuItem{
+    -fx-background-color: #ffb703;
+}
+.menuItem:hover, menuItem:active{
+    -fx-background-color: #fb8500;
+    -fx-cursor: hand;
+}
+.radioButton{
+    -fx-border: solid #ffb703;
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #ffb703;
+    -fx-border-width: 4px;
+}
+.button:hover{
+    -fx-background-color: #fb8500;
+    -fx-cursor: hand;
+}
+
+
+.datePicker .arrow-button {
+	-fx-background-color: #007acc;
+	-fx-background-radius: 0;
+}
+
+.datePicker .label{
+    -fx-background-color: #023047;
+}
+
+.datePicker .arrow-button:hover {
+	-fx-background-color: #ffb703;
+}
+
+.datePicker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+
+.datePicker .cell {
+	-fx-background-color: #8ecae6;
+}
+
+.datePicker .cell:hover {
+	-fx-background-color: #ffb703;
+	-fx-cursor: hand;
+}
+
+.datePicker .cell:focused {
+	-fx-background-color: #fb8500;
+}
+
+.datePicker .selected {
+	-fx-background-color: #007acc;
+	-fx-text-fill: white;
+}
+
+.datePicker .selected:focused {
+	-fx-background-color: #fb8500;
+	-fx-text-fill: white;
+}
+
+
+.datePicker-popup .spinner .button .left-arrow,
+.datePicker-popup .spinner .button .right-arrow {
+	-fx-background-color: #fb8500;
+}

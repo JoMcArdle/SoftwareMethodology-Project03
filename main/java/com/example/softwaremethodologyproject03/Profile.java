@@ -76,13 +76,13 @@ public class Profile implements Comparable<Profile> {
     @Override
     public int compareTo(Profile profile) {
 
-        if(this.lname.compareTo(profile.lname) > 0){
+        if(this.lname.toLowerCase().compareTo(profile.lname.toLowerCase()) > 0){
             return 1;
-        }else if(this.lname.compareTo(profile.lname) < 0){
+        }else if(this.lname.toLowerCase().compareTo(profile.lname.toLowerCase()) < 0){
             return -1;
-        }else if(this.fname.compareTo(profile.fname) > 0){
+        }else if(this.fname.toLowerCase().compareTo(profile.fname.toLowerCase()) > 0){
             return 1;
-        }else if(this.fname.compareTo(profile.fname) < 0){
+        }else if(this.fname.toLowerCase().compareTo(profile.fname.toLowerCase()) < 0){
             return -1;
         }else if(this.dob.compareTo(profile.dob) > 0){
             return 1;

@@ -39,7 +39,7 @@ public class Enrollment {
      */
     private int find(EnrollStudent enrollStudent){
         int result = NOT_FOUND;
-        for (int i = 0; i< numEnrollments; i++) {
+        for (int i = 0; i < numEnrollments; i++) {
             if (this.enrollStudents[i].equals(enrollStudent)) {
                 result = i;
                 return result;
@@ -77,7 +77,6 @@ public class Enrollment {
     public boolean remove(EnrollStudent enrollStudent){
         if(contains(enrollStudent)){
             for(int i= find(enrollStudent); i <= numEnrollments -2; i++) {
-
                 this.enrollStudents[i] = enrollStudents[i+1];
             }
             numEnrollments--;
@@ -104,10 +103,12 @@ public class Enrollment {
     /**
      * This method will print all the students enrolled as they were inserted
      */
-    public void print() {
+    public String print() {
+        String s ="";
         for(int i= 0; i < numEnrollments; i++){
-            System.out.println(enrollStudents[i]);
+            s+= enrollStudents[i] +"\n";
         }
+        return s;
     }
 
     /**
@@ -144,7 +145,7 @@ public class Enrollment {
      * @param location, the location where the student is in the enrollment roster.
      * @return the enrolled student at that specified location.
      */
-    public EnrollStudent returnEnrollStudent (int location) {
+    public EnrollStudent returnEnrollStudent(int location) {
 
         EnrollStudent s = enrollStudents[location];
 

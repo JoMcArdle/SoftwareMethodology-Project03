@@ -101,16 +101,18 @@ public class Roster {
      * Helper method. This method will print all the contents in any the array of Students
      * @param students
      */
-    private void iterate(Student[] students){
+    private String iterate(Student[] students){
+        String s = "";
         for(int i = 0; i < numStudents; i++){
-            System.out.println(students[i]);
+            s += students[i] + "\n";
         }// This method will iterate the array of students without iterate de null values
+        return s;
     }
 
     /**
      * Print method prints the contents of the roster sorted by profile (lname, fname, dob)
      */
-    public void print() {
+    public String print() {
         boolean needToSwap = true;
         while(needToSwap){
             needToSwap = false;
@@ -123,13 +125,13 @@ public class Roster {
                 }
             }
         }
-        iterate(roster);
+        return iterate(roster);
     } //print roster sorted by profiles
 
     /**
      * printBySchoolMajor method will print the students by major and school using alphabetical order
      */
-    public void printBySchoolMajor() {
+    public String printBySchoolMajor() {
         boolean needToSwap = true;
         while (needToSwap) {
             needToSwap = false;
@@ -142,13 +144,13 @@ public class Roster {
                 }
             }
         }
-        iterate(roster);
+        return iterate(roster);
     }
 
     /**
      * printByStanding method will print the roster sorted by standing from lower to highest
      */
-    public void printByStanding() {
+    public String printByStanding() {
         boolean needToSwap = true;
         while (needToSwap) {
             needToSwap = false;
@@ -161,19 +163,21 @@ public class Roster {
                 }
             }
         }
-        iterate(roster);
+        return iterate(roster);
     }//print roster sorted by standing
 
     /**
      * This method will receive the schoolName as a parameter and print all the students in that school ordered alphabetically
      * @param schoolName
      */
-    public void printMajor(String schoolName){
+    public String printMajor(String schoolName){
+        String s = "";
         for(int i = 0; i < numStudents; i++){
             if(schoolName.equals(roster[i].getMajor().getSchool())){
-                System.out.println(roster[i]);
+                s += roster[i] + "\n";
             }
         }
+        return s;
     }
 
     /**
