@@ -51,7 +51,7 @@ public class Enrollment {
      * This method will add a enrollStudent to the end of Enrollment array. If the profile of the student is in the Enrollment,
      * it will update the enrollStudent in the array to the one inserted as a parameter (the credits enrolled might change)
      * @param enrollStudent
-     * @return it returns true if we add a enrollStudent to the
+     *
      */
     public void add(EnrollStudent enrollStudent){
         if(numEnrollments == enrollStudents.length){
@@ -101,7 +101,8 @@ public class Enrollment {
     }
 
     /**
-     * This method will print all the students enrolled as they were inserted
+     * This method will return a string containing all the students enrolled one by one in a different line
+     * @return String
      */
     public String print() {
         String s ="";

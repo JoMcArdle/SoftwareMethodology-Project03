@@ -98,8 +98,8 @@ public class Roster {
     } //if the student is in roster
 
     /**
-     * Helper method. This method will print all the contents in any the array of Students
-     * @param students
+     * Helper method. This method will print all the contents of the array in a string
+     * @return String
      */
     private String iterate(Student[] students){
         String s = "";
@@ -110,7 +110,8 @@ public class Roster {
     }
 
     /**
-     * Print method prints the contents of the roster sorted by profile (lname, fname, dob)
+     * Print method will return the contents of the roster sorted by profile (lname, fname, dob) as a String
+     * @return String
      */
     public String print() {
         boolean needToSwap = true;
@@ -129,7 +130,8 @@ public class Roster {
     } //print roster sorted by profiles
 
     /**
-     * printBySchoolMajor method will print the students by major and school using alphabetical order
+     * printBySchoolMajor method will return the students by major and school using alphabetical order as a String
+     * @return String
      */
     public String printBySchoolMajor() {
         boolean needToSwap = true;
@@ -148,7 +150,8 @@ public class Roster {
     }
 
     /**
-     * printByStanding method will print the roster sorted by standing from lower to highest
+     * printByStanding method will return the roster sorted by standing from lower to highest as a string
+     * @return String
      */
     public String printByStanding() {
         boolean needToSwap = true;
@@ -167,8 +170,9 @@ public class Roster {
     }//print roster sorted by standing
 
     /**
-     * This method will receive the schoolName as a parameter and print all the students in that school ordered alphabetically
+     * This method will receive the schoolName as a parameter and will return all the students in that school ordered alphabetically as a string
      * @param schoolName
+     * @return String
      */
     public String printMajor(String schoolName){
         String s = "";
