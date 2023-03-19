@@ -941,7 +941,7 @@ public class TuitionManagerController {
     }
 
     /**
-     * On action method thta will print the students in the SC&I school
+     * On action method that will print the students in the SCI school
      * @param event
      */
     @FXML
